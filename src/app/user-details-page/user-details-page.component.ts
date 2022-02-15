@@ -23,6 +23,14 @@ export class UserDetailsPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.subscribeToForm();
+  }
+
+  private subscribeToForm(): void {
+    this.form.valueChanges.subscribe((x) => {
+      console.log('form value changed');;
+      console.log(x);
+    });
   }
 
 }

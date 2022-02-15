@@ -1,7 +1,7 @@
 <ng-container [formGroup]="form">
   <ng-container formArrayName="addresses"]>
     <ng-container *ngFor="let address of addresses.controls; let i = index;">
-      <div [formGroupName]="i">
+      <div class="address-line" [formGroupName]="i">
         <label for="{{ 'addressLine' + i }}">Address Line {{i}}: </label>
         <input type="text" name="{{ 'addressLine' + i }}" formControlName="address" />
       </div>
@@ -9,4 +9,6 @@
   </ng-container>
 </ng-container>
 
-<button (click)="addAddressLine()">Add Address Line</button>
+<div class="add-button">
+  <button (click)="addAddressLine()">Add Address Line</button>
+</div>
