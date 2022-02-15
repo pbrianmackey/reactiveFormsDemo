@@ -1,9 +1,8 @@
 <div [formGroup]="form">
   <mac-user [form]="user"></mac-user>
-  <mac-address [form]="address"></mac-address>
+  <mac-dynamic-address [form]="form"></mac-dynamic-address>
 </div>
 
-
-<div>
+<div class="form-output">
   Value: {{ form.value | json }}
 </div>
