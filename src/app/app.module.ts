@@ -4,14 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserComponent } from './user/user.component';
-import { DynamicAddressComponent } from './dynamic-address/dynamic-address.component';
+import { UserComponent } from './user-details-page/user/user.component';
+import { DynamicAddressComponent } from './user-details-page/dynamic-address/dynamic-address.component';
+import { UserDetailsPageComponent } from './user-details-page/user-details-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    DynamicAddressComponent
+    DynamicAddressComponent,
+    UserDetailsPageComponent
   ],
   imports: [
     BrowserModule,
